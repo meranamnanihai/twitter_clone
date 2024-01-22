@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<style>
+    body {
+        cursor: url("icons/zeeconvert-com\ \(1\).png"), auto;
+    }
+    @media screen and (max-width: 1017px) {
+        #right{
+            display: none;
+        }
+        #middle{
+            width: 90%;
+        }
+
+    }
+    @media screen and (max-width:600px) {
+        #left{
+            display: none;
+        }
+        #middle{
+            width:100%;
+        }
+    }
+</style>
+
+<body class="h-[100vh] w-[100vw] gap-1">
+    <div class="main w-[100%] h-[100%] flex">
+        <div class="left xl:w-[33%] w-[10%] h-[100%] bg-blue-400 flex items-center justify-center flex-col " id="left" >
+            <ul class="flex flex-col h-full gap-y-2">
+                <li
+                    class="flex items-center text-[20px] font-bold gap-2 xl:hover:bg-slate-500 rounded-[100%] w-[max-content] px-3 py-3">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                        class="w-10 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-18jsvk2 r-16y2uox r-8kz0gk">
+                        <g>
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </g>
+                    </svg>
+                </li>
+                <li
+                    class="cursor-pointer flex items-center text-[20px] font-bold gap-2 xl:hover:bg-slate-500 rounded-3xl w-[max-content] px-5 pl-3 py-1">
+                    <img src="icons/home.svg" alt="" srcset="" class="w-8" /> <span
+                        class="hidden xl:inline">Home</span>
+                </li>
+                <li
+                    class="cursor-pointer flex items-center text-[20px] font-bold gap-2 xl:hover:bg-slate-500 rounded-3xl w-[max-content] px-5 pl-3 py-1">
+                    <img src="icons/search.svg" alt="" srcset="" class="w-8" /> <span
+                        class="hidden xl:inline">Explore</span>
+                </li>
+                <li
+                    class="cursor-pointer flex items-center text-[20px] font-bold gap-2 xl:hover:bg-slate-500 rounded-3xl w-[max-content] px-5 pl-3 py-1">
+                    <img src="icons/notification.svg" alt="" srcset="" class="w-8" /><span
+                        class="hidden xl:inline">Notifications</span>
+                </li>
+                <li
+                    class="cursor-pointer flex items-center text-[20px] font-bold gap-2 xl:hover:bg-slate-500 rounded-3xl w-[max-content] px-5 pl-3 py-1">
+                    <img src="icons/msg.svg" alt="" srcset="" class="w-8" /><span
+                        class="hidden xl:inline">Messages</span>
+                </li>
+                <li
+                    class="cursor-pointer flex items-center text-[20px] font-bold gap-2 xl:hover:bg-slate-500 rounded-3xl w-[max-content] px-5 pl-3 py-1">
+                    <img src="icons/lists.svg" alt="" srcset="" class="w-8" /><span
+                        class="hidden xl:inline">Lists</span>
+                </li>
+                <li
+                    class="cursor-pointer flex items-center text-[20px] font-bold gap-2 xl:hover:bg-slate-500 rounded-3xl w-[max-content] px-5 pl-3 py-1">
+                    <img src="icons/communities.svg" alt="" srcset="" class="w-8" /><span
+                        class="hidden xl:inline">communities</span>
+                </li>
+                <li
+                    class="cursor-pointer flex items-center text-[20px] font-bold gap-2 xl:hover:bg-slate-500 rounded-3xl w-[max-content] px-5 pl-3 py-1">
+                    <img src="icons/profile.svg" alt="" srcset="" class="w-8" /><span
+                        class="hidden xl:inline">Profile</span>
+                </li>
+                <li
+                    class="cursor-pointer flex items-center text-[20px] font-bold gap-2 xl:hover:bg-slate-500 rounded-3xl w-[max-content] px-5 pl-3 py-1">
+                    <img src="icons/more.svg" alt="" srcset="" class="w-8" /><span
+                        class="hidden xl:inline">More</span>
+                </li>
+                <li
+                    class="cursor-pointer flex items-center text-[20px] font-bold gap-2 xl:hover:bg-slate-500 rounded-3xl w-[max-content] px-5 pl-3 py-1">
+                    <img src="icons/settings.svg" alt="" srcset="" class="w-8" /> <span
+                        class="hidden xl:inline">Settings</span>
+                </li>
+                <li
+                    class="cursor-pointer flex items-center text-[20px] font-bold gap-2 xl:hover:bg-slate-500 rounded-3xl w-[max-content] px-5 pl-3 py-1">
+                    <img src="icons/schedule.svg" alt="" srcset="" class="w-8" /> <span
+                        class="hidden xl:inline">Schedule</span>
+                </li>
+                <li class="ml-3 w-[100%]">
+                    <div
+                        class="post-btn xl:w-[100%] h-12   flex justify-center bg-blue-500 text-white xl:rounded-3xl text-2xl items-center hover:bg-blue-600 cursor-pointer rounded-full w-12 px-2">
+                        <span class="hidden xl:inline">Post</span> <span class="inline xl:hidden"><img src="icons/feather.svg" alt="" srcset=""></span>
+                    </div>
+                </li>
+                <li  class="ml-3 ">
+                    <div class="profile flex  cursor-pointer xl:hover:bg-gray-500 xl:p-3  xl:rounded-full">
+                        <div
+                            class="photo rounded-[100%] text-white text-2xl bg-[rgb(141,110,99)] w-12  h-12 flex justify-center items-center mr-2">
+                            a
+                        </div>
+                        <div class="details xl:block hidden">
+                            <div class="details-name font-bold">Admya Salar</div>
+                            <div class="details-account-name">ashsalar15@gmail.com</div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="middle xl:w-[33%] h-[100%] w-[60%]  overflow-auto pb-2" id="middle">
+            <div class="nav sticky top-0 bg-[#DADADB]">
+                <div class="nav-top sm:hidden block">
+                    <ul class="flex justify-between p-2 ">
+                        <li ><img class="w-8" src="icons/home.svg" alt="" srcset=""></li>
+                        <li><svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-18jsvk2 r-16y2uox r-8kz0gk">
+                            <g>
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                </path>
+                            </g>
+                        </svg></li>
+                        <li ><img class="w-8" src="icons/settings.svg" alt=""></li>
+                    </ul>
+                </div>
+                <div class="nav-bottom flex border-b-black border-b-2 ">
+                    <div class="wrapper sm:w-[45%] w-[50%] flex justify-center hover:bg-gray-400 cursor-pointer">
+                        <div class="left border-b-blue-500 border-b-4 h-full py-3">
+                            For you
+                        </div>
+                    </div>
+    
+                    <div class="right py-3 sm:w-[45%] w-[50%] flex justify-center hover:bg-gray-400 cursor-pointer">
+                        Following
+                    </div>
+                    <div class="settings w-[10%] sm:flex hidden py-3 justify-center">
+                        <img src="icons/settings.svg" alt="" srcset=""
+                            class="hover:bg-gray-400 p-[3px] rounded-full cursor-pointer " />
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post h-[20%] px-3 border-b-2 border-b-black">
+                <div class="ask flex h-[50%] items-center">
+                    <div
+                        class="photo rounded-[200%] w-12 h-[60%] text-white text-2xl bg-[rgb(141,110,99)] p-6 box-border items-center flex justify-center mr-2">
+                        a
+                    </div>
+                    <div class="question">
+                        <input type="text" placeholder="Whats happening??!"
+                            class="text-black text-xl outline-none border-0 placeholder:text-xl placeholder:text-[#4b4848]" />
+                    </div>
+                </div>
+                <div class="bottom mt-3 ml-12 flex justify-between items-center">
+                    <ul class="flex gap-3">
+                        <li class="hover:bg-green-400 rounded-[100%] p-1">
+                            <img src="icons/gif.svg" alt="" srcset="" />
+                        </li>
+                        <li class="hover:bg-green-400 rounded-[100%] p-1">
+                            <img src="icons/laugh.svg" alt="" srcset="" />
+                        </li>
+                        <li class="hover:bg-green-400 rounded-[100%] p-1">
+                            <img src="icons/location.svg" alt="" srcset="" />
+                        </li>
+                        <li class="hover:bg-green-400 rounded-[100%] p-1">
+                            <img src="icons/poll.svg" alt="" srcset="" />
+                        </li>
+                    </ul>
+                    <div class="post-btn p-5 py-2 bg-black rounded-full text-white inline w-[max-content] font-bold">
+                        Post
+                    </div>
+                </div>
+            </div>
+
+            <div class="post h-[max-content] w-[100%] border-b-2 border-b-black py-5 ">
+                <div class="info h-[30%] flex justify-between w-[100%] items-center ">
+                    <div class="wrapper flex w-[90%]  gap-[1px] xl:gap-[5px] items-center px-2 h-full whitespace-nowrap">
+                        <div
+                            class="photo rounded-[200%] w-12 h-12 text-white text-2xl bg-[rgb(141,110,99)]  box-border items-center flex justify-center xl:mr-2 ">
+                            a          
+                        </div>
+                        <div class="name  text-[13px] sm:text-sm "> Non aesthictic things</div>
+                        <div class="account-name text-[13px] sm:text-sm "> &bull; @Nonaesthehtic</div>
+                        <div class="date  text-[13px] sm:text-sm "> &bull; 7 jan</div>
+                    </div>
+                    <div class="dots flex justify-center w-[10%] ">
+                        <img src="icons/triple-dots.svg" alt="" srcset=""
+                            class=" hover:bg-green-400 rounded-[100%] p-1">
+                    </div>
+                </div>
+                <div class="msg mt-2">
+                    <div class="text px-5">
+                        I spent $44 billion for this app and now Lizard boy just decided to hit copy and paste. It’s
+                        personal now. See you in the cage, Zuck.
+                        <img src="https://pbs.twimg.com/media/GEGqnodacAAoyCO?format=jpg&name=900x900" alt="" srcset=""
+                            class="border-2 border-black mt-2 mb-3 rounded-2xl">
+                    </div>
+
+                </div>
+                <div class="icons px-5 mt-2">
+                    <ul class="flex gap-[16%]">
+                        <li class=" rounded-[100%] p-1 flex items-center hover:text-green-600">
+                            <img src="icons/comment.svg" class="hover:bg-green-400 p-1 cursor-pointer rounded-[100%] object-contain" srcset="" /><span>1.7k</span>
+                        </li>
+                        <li class=" rounded-[100%] p-1 flex items-center hover:text-red-600">
+                            <img src="icons/love.svg" class="hover:bg-red-400 p-1 cursor-pointer rounded-[100%]" srcset="" /><span>1.7k</span>
+                        </li>
+                        <li class=" rounded-[100%] p-1 flex items-center hover:text-green-600">
+                            <img src="icons/comment.svg" class="hover:bg-green-400 p-1 cursor-pointer rounded-[100%]" srcset="" /><span>1.7k</span>
+                        </li>
+                        <li class=" rounded-[100%] p-1 flex items-center hover:text-red-600">
+                            <img src="icons/love.svg" class="hover:bg-red-400 p-1 cursor-pointer rounded-[100%]" srcset="" /><span>1.7k</span>
+                        </li>
+
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="post h-[max-content] w-[100%] border-b-2 border-b-black py-5 ">
+                <div class="info h-[30%] flex justify-between w-[100%] items-center ">
+                    <div class="wrapper flex w-[90%]  gap-[1px] xl:gap-[5px] items-center px-2 h-full whitespace-nowrap">
+                        <div
+                            class="photo rounded-[200%] w-12 h-12 text-white text-2xl bg-[rgb(141,110,99)]  box-border items-center flex justify-center xl:mr-2 ">
+                            a          
+                        </div>
+                        <div class="name  text-[13px] sm:text-sm "> Non aesthictic things</div>
+                        <div class="account-name text-[13px] sm:text-sm "> &bull; @Nonaesthehtic</div>
+                        <div class="date  text-[13px] sm:text-sm "> &bull; 7 jan</div>
+                    </div>
+                    <div class="dots flex justify-center w-[10%] ">
+                        <img src="icons/triple-dots.svg" alt="" srcset=""
+                            class=" hover:bg-green-400 rounded-[100%] p-1">
+                    </div>
+                </div>
+                <div class="msg mt-2">
+                    <div class="text px-5">
+                        I spent $44 billion for this app and now Lizard boy just decided to hit copy and paste. It’s
+                        personal now. See you in the cage, Zuck.
+                        <img src="https://pbs.twimg.com/media/GEGqnodacAAoyCO?format=jpg&name=900x900" alt="" srcset=""
+                            class="border-2 border-black mt-2 mb-3 rounded-2xl">
+                    </div>
+
+                </div>
+                <div class="icons px-5 mt-2">
+                    <ul class="flex gap-[16%]">
+                        <li class=" rounded-[100%] p-1 flex items-center hover:text-green-600">
+                            <img src="icons/comment.svg" class="hover:bg-green-400 p-1 cursor-pointer rounded-[100%] object-contain" srcset="" /><span>1.7k</span>
+                        </li>
+                        <li class=" rounded-[100%] p-1 flex items-center hover:text-red-600">
+                            <img src="icons/love.svg" class="hover:bg-red-400 p-1 cursor-pointer rounded-[100%]" srcset="" /><span>1.7k</span>
+                        </li>
+                        <li class=" rounded-[100%] p-1 flex items-center hover:text-green-600">
+                            <img src="icons/comment.svg" class="hover:bg-green-400 p-1 cursor-pointer rounded-[100%]" srcset="" /><span>1.7k</span>
+                        </li>
+                        <li class=" rounded-[100%] p-1 flex items-center hover:text-red-600">
+                            <img src="icons/love.svg" class="hover:bg-red-400 p-1 cursor-pointer rounded-[100%]" srcset="" /><span>1.7k</span>
+                        </li>
+
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="post h-[max-content] w-[100%] border-b-2 border-b-black py-5 ">
+                <div class="info h-[30%] flex justify-between w-[100%] items-center ">
+                    <div class="wrapper flex w-[90%]  gap-[1px] xl:gap-[5px] items-center px-2 h-full whitespace-nowrap">
+                        <div
+                            class="photo rounded-[200%] w-12 h-12 text-white text-2xl bg-[rgb(141,110,99)]  box-border items-center flex justify-center xl:mr-2 ">
+                            a          
+                        </div>
+                        <div class="name  text-[13px] sm:text-sm "> Non aesthictic things</div>
+                        <div class="account-name text-[13px] sm:text-sm "> &bull; @Nonaesthehtic</div>
+                        <div class="date  text-[13px] sm:text-sm "> &bull; 7 jan</div>
+                    </div>
+                    <div class="dots flex justify-center w-[10%] ">
+                        <img src="icons/triple-dots.svg" alt="" srcset=""
+                            class=" hover:bg-green-400 rounded-[100%] p-1">
+                    </div>
+                </div>
+                <div class="msg mt-2">
+                    <div class="text px-5">
+                        I spent $44 billion for this app and now Lizard boy just decided to hit copy and paste. It’s
+                        personal now. See you in the cage, Zuck.
+                    
+                    </div>
+
+                </div>
+                <div class="icons px-5 mt-2">
+                    <ul class="flex gap-[16%]">
+                        <li class=" rounded-[100%] p-1 flex items-center hover:text-green-600">
+                            <img src="icons/comment.svg" class="hover:bg-green-400 p-1 cursor-pointer rounded-[100%] object-contain" srcset="" /><span>1.7k</span>
+                        </li>
+                        <li class=" rounded-[100%] p-1 flex items-center hover:text-red-600">
+                            <img src="icons/love.svg" class="hover:bg-red-400 p-1 cursor-pointer rounded-[100%]" srcset="" /><span>1.7k</span>
+                        </li>
+                        <li class=" rounded-[100%] p-1 flex items-center hover:text-green-600">
+                            <img src="icons/comment.svg" class="hover:bg-green-400 p-1 cursor-pointer rounded-[100%]" srcset="" /><span>1.7k</span>
+                        </li>
+                        <li class=" rounded-[100%] p-1 flex items-center hover:text-red-600">
+                            <img src="icons/love.svg" class="hover:bg-red-400 p-1 cursor-pointer rounded-[100%]" srcset="" /><span>1.7k</span>
+                        </li>
+
+                        
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="right xl:w-[33%] w-[30%] h-[100%] bg-slate-400 flex items-start flex-col gap-[2%] px-5 py-5 overflow-auto"
+            id="right">
+            <div class="searchbar xl:w-[70%] w-[100%] bg-[rgb(239,243,244)] rounded-full flex p-3 gap-2 text-xl items-center">
+                <img src="icons/search.svg" alt="" srcset="" />
+                <input type="text" placeholder="Search"
+                    class="text-xl placeholder-black outline-none bg-[rgb(239,243,244)] w-[80%]" />
+            </div>
+            <div class="premium bg-[rgb(239,243,244)] xl:w-[70%] w-[100%] flex flex-col gap-y-3 p-5 box-border rounded-2xl">
+                <h2 class="font-bold text-2xl">Subscribe to premium</h2>
+                <p>
+                    Subscribe to unlock new features and if eligible, receive a share of
+                    ads revenue
+                </p>
+                <div class="subscribe-btn p-5 py-2 bg-black rounded-full text-white inline w-[max-content] font-bold">
+                    Subscribe
+                </div>
+            </div>
+            <div class="happening xl:w-[70%] w-[100%] h-[max-content] bg-[rgb(239,243,244)] rounded-2xl py-3 pb-0">
+                <h2 class="font-bold text-2xl px-3 cursor-pointer">
+                    Whats happening
+                </h2>
+                <div class="trend flex flex-col mt-3 hover:bg-[rgb(200,209,212)] px-3 py-1 cursor-pointer">
+                    <div class="trend-top flex justify-between text-[13px] h-[fit-content]">
+                        Trending in India
+                        <img src="icons/triple-dots.svg" alt="" srcset="" />
+                    </div>
+                    <div class="trend-text font-bold">#Ayoydhya Ram mandir</div>
+                    <div class="trends-views text-[13px]">346k</div>
+                </div>
+                <div class="trend flex flex-col mt-3 hover:bg-[rgb(200,209,212)] px-3 py-1 cursor-pointer">
+                    <div class="trend-top flex justify-between text-[13px] h-[fit-content]">
+                        Trending in India
+                        <img src="icons/triple-dots.svg" alt="" srcset="" />
+                    </div>
+                    <div class="trend-text font-bold">#Ayoydhya Ram mandir</div>
+                    <div class="trends-views text-[13px]">346k</div>
+                </div>
+                <div class="trend flex flex-col mt-3 hover:bg-[rgb(200,209,212)] px-3 py-1 cursor-pointer">
+                    <div class="trend-top flex justify-between text-[13px] h-[fit-content]">
+                        Trending in India
+                        <img src="icons/triple-dots.svg" alt="" srcset="" />
+                    </div>
+                    <div class="trend-text font-bold">#Ayoydhya Ram mandir</div>
+                    <div class="trends-views text-[13px]">346k</div>
+                </div>
+                <div class="show-more text-blue-500 px-3 cursor-pointer rounded-b-2xl hover:bg-[rgb(200,209,212)] p-3">
+                    Show more
+                </div>
+            </div>
+            <div class="follow xl:w-[70%] w-[100%] h-[60%] bg-[rgb(239,243,244)] rounded-2xl py-3 pb-0">
+                <h2 class="font-bold text-2xl px-3 cursor-pointer">Who to Follow</h2>
+                <div class="profiles flex flex-col">
+                    <div class="profile flex justify-between p-3 items-center hover:bg-[#cec3c3]">
+                        <div class="wrapper flex items-center">
+                            <div class="photo rounded-full mr-2">
+                                <img src="profiles/modi.jpeg" alt="" srcset="" class="h-10 w-10 rounded-full" />
+                            </div>
+                            <div class="details">
+                                <div class="name">Pm Modi</div>
+                                <div class="account-name whitespace-nowrap">@pm-modi566</div>
+                            </div>
+                        </div>
+                        <div
+                            class="follow-btn p-5 py-2 items-center flex bg-black rounded-full text-white w-[max-content] font-bold">
+                            Follow
+                        </div>
+                    </div>
+                    <div class="profile flex justify-between p-3 items-center hover:bg-[#cec3c3]">
+                        <div class="wrapper flex items-center">
+                            <div class="photo rounded-full mr-2">
+                                <img src="profiles/modi.jpeg" alt="" srcset="" class="h-10 w-10 rounded-full" />
+                            </div>
+                            <div class="details">
+                                <div class="name">Pm Modi</div>
+                                <div class="account-name whitespace-nowrap">@pm-modi566</div>
+                            </div>
+                        </div>
+                        <div
+                            class="follow-btn p-5 py-2 items-center flex bg-black rounded-full text-white w-[max-content] font-bold">
+                            Follow
+                        </div>
+                    </div>
+                    <div class="profile flex justify-between p-3 items-center hover:bg-[#cec3c3]">
+                        <div class="wrapper flex items-center">
+                            <div class="photo rounded-full mr-2">
+                                <img src="profiles/modi.jpeg" alt="" srcset="" class="h-10 w-10 rounded-full" />
+                            </div>
+                            <div class="details">
+                                <div class="name">Pm Modi</div>
+                                <div class="account-name whitespace-nowrap">@pm-modi566</div>
+                            </div>
+                        </div>
+                        <div
+                            class="follow-btn p-5 py-2 items-center flex bg-black rounded-full text-white w-[max-content] font-bold">
+                            Follow
+                        </div>
+                    </div>
+                    <div class="profile flex justify-between p-3 items-center hover:bg-[#cec3c3]">
+                        <div class="wrapper flex items-center">
+                            <div class="photo rounded-full mr-2">
+                                <img src="profiles/modi.jpeg" alt="" srcset="" class="h-10 w-10 rounded-full" />
+                            </div>
+                            <div class="details">
+                                <div class="name">Pm Modi</div>
+                                <div class="account-name whitespace-nowrap">@pm-modi566</div>
+                            </div>
+                        </div>
+                        <div
+                            class="follow-btn p-5 py-2 items-center flex bg-black rounded-full text-white w-[max-content] font-bold">
+                            Follow
+                        </div>
+                    </div>
+                    <div class="show-more text-blue-500 cursor-pointer rounded-b-2xl hover:bg-[rgb(200,209,212)] p-3">
+                        Show more
+                    </div>
+                </div>
+            </div>
+            <div class="footer text-white text-[13px]">
+                <ul class="grid w-full gap-x-3" style="
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-template-rows: 1fr 1fr;
+            ">
+                    <li class="flex hover:underline cursor-pointer">
+                        Terms of Service
+                    </li>
+                    <li class="flex hover:underline cursor-pointer">Privacy policy</li>
+                    <li class="flex hover:underline cursor-pointer">Cookie policy</li>
+                    <li class="flex hover:underline cursor-pointer">Accessibility</li>
+                    <li class="flex hover:underline cursor-pointer">Ads info</li>
+                    <li class="flex hover:underline cursor-pointer">More</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
